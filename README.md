@@ -21,45 +21,6 @@ This project implements a C++ Black-Scholes model to calculate option pricing us
 - CMake (optional for build management)
 
 
-# Example Outputs
-
-Enter stock price: 100
-Enter strike price: 100
-Enter time to maturity (in years): 1
-Enter risk-free rate: 0.05
-Enter volatility: 0.2
-Enter option type: call
-
-Call Option Price: $10.45
-Delta: 0.54
-Gamma: 0.02
-Theta: -0.03
-Rho: -0.5
-Vega: 0.23
-
-
-Monte Carlo Values: $11.02
-
-
-
-Sure! Here’s a sample README for your C++ Black-Scholes model project that incorporates the details you provided. You can customize it further to match your style or add any additional information.
-
-markdown
-Copy code
-# Black-Scholes Model with Monte Carlo Simulation
-
-## Overview
-
-This project implements a C++ Black-Scholes model to calculate option pricing using a Monte Carlo simulation. It employs Cholesky matrix decomposition for efficient computation, utilizes the Boost library for generating random values, and provides seamless user input for stock values related to both call and put options.
-
-## Features
-
-- **Monte Carlo Simulation**: Generates multiple matrix paths to simulate stock price movements, allowing for accurate option pricing.
-- **Cholesky Matrix Decomposition**: Enhances computational efficiency by transforming covariance matrices, ensuring faster calculations.
-- **Boost Library Integration**: Utilizes the Boost library to generate high-quality random values for the simulations.
-- **User-Friendly Input**: Enables users to input stock values effortlessly, facilitating real-time analysis.
-- **Fast Greek Value Generation**: Quickly calculates and outputs Greek values, providing insights into option sensitivity and risk management.
-
 ## Getting Started
 
 ### Prerequisites
@@ -97,20 +58,26 @@ Follow the prompts to enter the stock values for the call and put options.
 
 The program will output the calculated option prices along with Greek values.
 
-Example Input/Output
-plaintext
-Copy code
+
+# Example Outputs
+
 Enter stock price: 100
 Enter strike price: 100
 Enter time to maturity (in years): 1
 Enter risk-free rate: 0.05
 Enter volatility: 0.2
+Enter option type: call
 
 Call Option Price: $10.45
-Put Option Price: $5.32
 Delta: 0.54
 Gamma: 0.02
 Theta: -0.03
+Rho: -0.5
+Vega: 0.23
+
+
+Monte Carlo Values: $11.02
+
 
 
 # Contributing
